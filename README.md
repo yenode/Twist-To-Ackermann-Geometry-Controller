@@ -6,8 +6,8 @@ This ROS2 package provides an enhanced Ackermann steering controller with a smoo
 
 - **Smooth Bicycle Kinematics**: Implements `δ = atan(L*ω/v)` for accurate, Nav2-compatible steering. The controller logic is designed to prevent jerks and ensure smooth motion.
 - **Robust Edge Case Handling**: 
-    - **Turning in Place**: Manages commands with only an `angular.z` component (and `linear.x` is zero), allowing the robot to turn while stationary.
-    - **Velocity Deadzone**: Velocities below `0.01` are treated as zero to prevent minor drift from joystick noise.
+    - **Turning in Place**: Manages commands with only an `angular.z` component (and `linear.x` is zero), allowing the robot to remain stationary.
+    - **Velocity Deadzone**: Velocities below `0.001` are treated as zero to prevent minor drift from joystick noise.
     - Handles various other scenarios to ensure stable and predictable behavior.
 - **Persistent Steering**: Maintains the current steering angle even when the robot is stopped, allowing for precise maneuvering.
 - **Command Timeout with Auto-Reset**: If no commands are received for 2 seconds, the steering angle gradually and smoothly returns to the center position.
