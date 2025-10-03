@@ -1,6 +1,6 @@
 # Custom Ackermann Controller for ROS2
 
-This ROS2 package provides an enhanced Ackermann steering controller with a smooth bicycle kinematic model, designed for accurate robot simulation and navigation in ROS2 Jazzy. It handles numerous edge cases to ensure jerk-free movement and provides robust teleoperation options.
+This ROS2 package provides an enhanced Ackermann steering controller with a smooth bicycle kinematic model, designed for accurate robot simulation and navigation in ROS2 Jazzy. It handles numerous edg[...] 
 
 ## Key Features
 
@@ -14,6 +14,12 @@ This ROS2 package provides an enhanced Ackermann steering controller with a smoo
 - **Teleoperation Options**:
     - **PS4 DualShock 4 Controller** (Recommended): Uses `joy` and `teleop_twist_joy` for responsive control.
     - **Standard Keyboard**: Uses the standard `teleop_twist_keyboard` for basic control.
+
+## Demonstration
+
+Below is a demonstration of the Ackermann controller in action within a Gazebo simulation, controlled using a PS4 controller.
+
+*(Insert your demonstration video or GIF here)*
 
 ## Dependencies
 
@@ -98,10 +104,10 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ## Nodes & Scripts
 
 ### `ackermann_twist_controller`
-The core node that subscribes to `/cmd_vel` (Twist messages) and converts them into Ackermann steering and velocity commands. It publishes `Float64MultiArray` messages to the `/forward_position_controller/commands` (for steering) and `/forward_velocity_controller/commands` (for wheel velocity).
+The core node that subscribes to `/cmd_vel` (Twist messages) and converts them into Ackermann steering and velocity commands. It publishes `Float64MultiArray` messages to the `/forward_position_contro[...] 
 
 ### `test_ps4_controller.py`
-A diagnostic script to test the PS4 controller. It subscribes to the `/joy` topic and displays crucial real-time information, including the raw data received from the controller and the corresponding `Twist` message that would be produced by `teleop_twist_joy`. This is useful for debugging and verifying controller mappings.
+A diagnostic script to test the PS4 controller. It subscribes to the `/joy` topic and displays crucial real-time information, including the raw data received from the controller and the corresponding [...]
 
 ## Launch Files
 
