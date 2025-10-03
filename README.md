@@ -19,7 +19,7 @@ This ROS2 package provides an enhanced Ackermann steering controller with a smoo
 
 Below is a demonstration of the Ackermann controller in action within a Gazebo simulation, controlled using a PS4 controller.
 
-*(Insert your demonstration video or GIF here)*
+[Ackermann Drive Bot operated using a PS4 controller.webm](https://github.com/user-attachments/assets/f9b31e5c-cb03-49f0-b802-344f4e236ff7)
 
 ## Dependencies
 
