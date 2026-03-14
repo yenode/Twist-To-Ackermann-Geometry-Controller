@@ -1,6 +1,6 @@
 # Custom Ackermann Controller for ROS2
 
-This ROS2 package provides an enhanced Ackermann steering controller with a smooth bicycle kinematic model, designed for accurate robot simulation and navigation in ROS2 Jazzy. It handles numerous edg[...] 
+This ROS2 package provides an enhanced Ackermann steering controller with a smooth bicycle kinematic model, designed for accurate robot simulation and navigation in ROS2 Jazzy. It handles numerous edge cases. 
 
 ## Key Features
 
