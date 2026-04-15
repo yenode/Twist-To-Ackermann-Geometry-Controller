@@ -39,9 +39,9 @@ sudo apt-get install ros-jazzy-teleop-twist-joy ros-jazzy-joy
     ```bash
     cd ~/prototype_autonomous_bot_cir_ws/src
     ```
-2.  (If not already present) Clone the repository:
+2.  Clone the repository:
     ```bash
-    # git clone <your-repo-url>
+    git clone https://github.com/yenode/Twist-To-Ackermann-Geometry-Controller
     ```
 3.  Build the package using `colcon`:
     ```bash
@@ -107,7 +107,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 The core node that subscribes to `/cmd_vel` (Twist messages) and converts them into Ackermann steering and velocity commands. It publishes `Float64MultiArray` messages to the `/forward_position_contro[...] 
 
 ### `test_ps4_controller.py`
-A diagnostic script to test the PS4 controller. It subscribes to the `/joy` topic and displays crucial real-time information, including the raw data received from the controller and the corresponding [...]
+A diagnostic script to test the PS4 controller. It subscribes to the `/joy` topic and displays crucial real-time information, including the raw data received from the controller and the corresponding velocities published.
 
 ## Launch Files
 
